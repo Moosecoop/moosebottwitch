@@ -1,8 +1,8 @@
 {
   "name": "moosebottwitch",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "MooseBot is a Twitch Chat moderation bot",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Moosecoop/moosebottwitch.git"
   },
   "keywords": [
-    "moose"
+    "moose, moosebot, bot, twitch bot, moosecoop, coop"
   ],
   "author": "Moosecoop",
   "license": "MIT",
