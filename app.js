@@ -274,7 +274,7 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); // false
      
     if(prefixUsed) {
-        client.action("luke_lafr", "normaly i dont do non mod's but ok, don't ask tho..... pls");
+        client.action("luke_lafr", "Hes the most lit mf around!");
     }
 });
 
