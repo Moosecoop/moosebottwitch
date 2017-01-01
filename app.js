@@ -339,7 +339,7 @@ client.on("chat", function(channel, user, message, self) {
     if(prefixUsed) {
         client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles +1
-    } else if(prefix2) {
+    } else if(prefixUsed2) {
         client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles +1
     }
