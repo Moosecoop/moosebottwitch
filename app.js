@@ -330,8 +330,9 @@ client.on("chat", function(channel, user, message, self) {
 
 client.on("chat", function(channel, user, message, self) {
     var prefix = "HTTPS://STRAWPOLE.ME/";
+    var prefix2 = "HTTP://STRAWPOLE.ME/";
     var message4p = message.toUpperCase();
-    var prefixUsed = message4p.startsWith(prefix); // false
+    var prefixUsed = message4p.startsWith(prefix && prefix2); // false
      
     if(prefixUsed) {
         client.action("luke_lafr", "stop with the strawpoles " + user['display-name'] + "... ya dipshit | (" + poles + ")");
