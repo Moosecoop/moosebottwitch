@@ -148,7 +148,7 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); // false
     console.log(prefixUsed + " " + message4p + " " + prefix);
     if(prefixUsed) {
-        client.action("luke_lafr", "donate to extralife! hellbaskets.com");
+        client.action("luke_lafr", "donate to extralife! hellbaskets.com ! 'trumpets are lit' -amo, 2016");
     }
 });
 
