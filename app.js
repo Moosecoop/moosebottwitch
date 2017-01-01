@@ -331,3 +331,13 @@ client.on("chat", function(channel, user, message, self) {
         client.action("luke_lafr", "moose's discord bot: bot.moosecoop.com");
     }
 });
+
+client.on("chat", function(channel, user, message, self) {
+    var prefix = "HTTPS://STRAWPOLE.ME/";
+    var message4p = message.toUpperCase();
+    var prefixUsed = message4p.startsWith(prefix); // false
+     
+    if(prefixUsed) {
+        client.action("luke_lafr", "stop with the strawpoles " + user['display-name'] + "... ya dipshit" );
+    }
+});
