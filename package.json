@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Moosecoop/moosebottwitch/issues"
   },
-  "homepage": "https://github.com/Moosecoop/moosebottwitch#readme"
+  "homepage": "https://github.com/Moosecoop/moosebottwitch#readme",
+  "dependencies": {
+    "tmi.js": "^1.1.2"
+  }
 }
