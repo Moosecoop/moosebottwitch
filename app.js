@@ -40,7 +40,7 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); // false
      
     if(prefixUsed) {
-        client.action("luke_lafr", "?luke ?2016 ?goal ?hell ?teak ?nitro ?game ?subscribe ?amo ?crayon ?wyre ?donate ?extralife ?emma ?barrington ?job ?about ?moose ?mape ?jake ?csgo ?caltane ?overwatch");
+        client.action("luke_lafr", "?luke ?2016 ?bot ?ytp ?goal ?hell ?teak ?nitro ?game ?subscribe ?amo ?crayon ?wyre ?donate ?extralife ?emma ?barrington ?job ?about ?moose ?mape ?jake ?csgo ?caltane ?overwatch");
     }
 });
 
@@ -309,5 +309,25 @@ client.on("chat", function(channel, user, message, self) {
      
     if(prefixUsed) {
         client.action("luke_lafr", "normaly i dont do non mod's but ok, don't ask tho..... pls");
+    }
+});
+
+client.on("chat", function(channel, user, message, self) {
+    var prefix = "?YTP";
+    var message4p = message.toUpperCase();
+    var prefixUsed = message4p.startsWith(prefix); // false
+     
+    if(prefixUsed) {
+        client.action("luke_lafr", "moose's latest YTP: USB KILLER: http://bit.ly/2ikPNPl");
+    }
+});
+
+client.on("chat", function(channel, user, message, self) {
+    var prefix = "?BOTS";
+    var message4p = message.toUpperCase();
+    var prefixUsed = message4p.startsWith(prefix); // false
+     
+    if(prefixUsed) {
+        client.action("luke_lafr", "moose's discord bot: bot.moosecoop.com");
     }
 });
