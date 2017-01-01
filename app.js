@@ -36,7 +36,7 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); // false
      
     if(prefixUsed) {
-        client.action("luke_lafr", "?luke ?2016 ?bot ?ytp ?goal ?hell ?teak ?nitro ?game ?subscribe ?amo ?crayon ?wyre ?donate ?extralife ?emma ?barrington ?job ?about ?moose ?mape ?jake ?csgo ?caltane ?overwatch");
+        client.action("luke_lafr", "?luke ?2016 ?bot ?ytp ?goal ?hell ?teak ?nitro ?game ?subscribe ?amo ?crayon ?wyre ?donate ?extralife ?emma ?barrington ?job ?about ?moose ?mape ?jake ?csgo ?caltane ?overwatch   | I also yell at peopel who post strawpoles!");
     }
 });
 
@@ -329,13 +329,30 @@ client.on("chat", function(channel, user, message, self) {
 });
 
 client.on("chat", function(channel, user, message, self) {
+    if(user['display-name'] !== "Luke_Lafr") {
     var prefix = "HTTPS://STRAWPOLE.ME/";
     var prefix2 = "HTTP://STRAWPOLE.ME/";
     var message4p = message.toUpperCase();
-    var prefixUsed = message4p.startsWith(prefix && prefix2); // false
+    var prefixUsed = message4p.startsWith(prefix); // false
+    var prefixUsed2 = message4p.startsWith(prefix2);
+    
+    if(prefixUsed) {
+        client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
+        poles = poles +1
+    } else if(prefix2) {
+        client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
+        poles = poles +1
+    }
+    }
+
+});
+
+client.on("chat", function(channel, user, message, self) {
+    var prefix = "?LIGHTS";
+    var message4p = message.toUpperCase();
+    var prefixUsed = message4p.startsWith(prefix); // false
      
     if(prefixUsed) {
-        client.action("luke_lafr", "stop with the strawpoles " + user['display-name'] + "... ya dipshit | (" + poles + ")");
-        poles = poles +1
+        client.action("luke_lafr", "not yet done!");
     }
 });
