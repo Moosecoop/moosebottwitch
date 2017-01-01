@@ -20,12 +20,8 @@ client.connect();
 
 client.on('connected', function(address, port) {
     console.log(`Address: ${address} - Port: ${port}`);
-    //client.action("luke_lafr", "MooseBot_ will remind people how the giveaway works periodicly!......");
+    poles = 1;
 });
-
-/*setInterval(function() {
-    client.action("luke_lafr", "WINNERS OF THE GAME GIVEAWAY PLEASE MESSAGE @Flight1simltt YOUR UNIQUE DISCORD USERNAME AND TAG! THANKS!");
-}, 120000);*/
 
 client.on("resub", function (channel, username, months, message) {
     client.action("luke_lafr", "Listen to @Moobot , it's sub thanking message is better lol");
@@ -338,6 +334,7 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); // false
      
     if(prefixUsed) {
-        client.action("luke_lafr", "stop with the strawpoles " + user['display-name'] + "... ya dipshit" );
+        client.action("luke_lafr", "stop with the strawpoles " + user['display-name'] + "... ya dipshit | (" + poles + ")");
+        poles = poles +1
     }
 });
