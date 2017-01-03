@@ -335,21 +335,15 @@ client.on("chat", function(channel, user, message, self) {
     var prefixUsed = message4p.startsWith(prefix); 
     var prefixUsed2 = message4p.startsWith(prefix2);
     
-    if(prefixUsed) {
+    if(prefixUsed = true) {
         client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles +1
-    } else if(prefix2) {
+    } else if(prefix2 = true) {
         client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles +1
+    } else {
+        console.log("no strawpoles");
     }
 });
 
-client.on("chat", function(channel, user, message, self) {
-    var prefix = "?LIGHTS";
-    var message4p = message.toUpperCase();
-    var prefixUsed = message4p.startsWith(prefix); // false
-     
-    if(prefixUsed) {
-        client.action("luke_lafr", "not yet done!");
-    }
-});
+
