@@ -329,11 +329,10 @@ client.on("chat", function(channel, user, message, self) {
 });
 
 client.on("chat", function(channel, user, message, self) {
-    if(user['display-name'] !== "Luke_Lafr") {
     var prefix = "HTTPS://STRAWPOLE.ME/";
     var prefix2 = "HTTP://STRAWPOLE.ME/";
     var message4p = message.toUpperCase();
-    var prefixUsed = message4p.startsWith(prefix); // false
+    var prefixUsed = message4p.startsWith(prefix); 
     var prefixUsed2 = message4p.startsWith(prefix2);
     
     if(prefixUsed) {
@@ -343,8 +342,6 @@ client.on("chat", function(channel, user, message, self) {
         client.action("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles +1
     }
-    }
-
 });
 
 client.on("chat", function(channel, user, message, self) {
