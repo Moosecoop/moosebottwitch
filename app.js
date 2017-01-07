@@ -337,7 +337,7 @@ client.on("chat", function(channel, user, message, self) {
     if (prefixUsed) {
         client.chat("luke_lafr", user['display-name'] + "...stop with the strawpoles... ya dipshit | (" + poles + ")");
         poles = poles + 1;
-        if (poles = < 10) {
+        if (poles =< 10) {
             poles = 0;
         }
     }
